@@ -7,9 +7,9 @@ import { User } from '../user-defn';
 @Component({
   selector: 'app-abs-login',
   templateUrl: './abs-login.component.html',
-  providers: [
-    UserBundleService
-  ],
+  // providers: [
+  //   UserBundleService
+  // ],
   styleUrls: ['./abs-login.component.css']
 })
 export class AbsLoginComponent implements OnInit {

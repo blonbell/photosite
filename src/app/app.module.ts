@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LandingComponent } from './landing/landing.component';
 import { AddProfileComponent } from './add-profile/add-profile.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
+import {UserBundleService} from './shared/user-bundle.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ UserBundleService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

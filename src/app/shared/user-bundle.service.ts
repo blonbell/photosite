@@ -7,11 +7,14 @@ export class UserBundleService {
   private userList: User[] = [
     {userId: 1, firstName: 'FName', lastName: 'LName'}
   ];
-  private credList: Cred[] = [];
+  private credList: Cred[];
   private saveUser: User;
   private cred: Cred;
 
   constructor() {
+    console.log(this.credList);
+    console.log("First call constructor");
+    this.credList = [];
   }
 
   saveLogin(username: string, password: string) {
