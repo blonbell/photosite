@@ -1,21 +1,27 @@
-import { Injectable } from '@angular/core';
-import { User } from '../user-defn';
+import {Injectable} from "@angular/core";
+import {Cred, User} from "../user-defn";
 
 @Injectable()
 export class UserBundleService {
 
-  userList: User[] = [
-    { userId: 1, username: 'TName', firstName: 'FName', lastName: 'LName' }
+  private userList: User[] = [
+    {userId: 1, firstName: 'FName', lastName: 'LName'}
   ];
+  private credList: Cred[] = [];
+  private saveUser: User;
+  private cred: Cred;
 
-  constructor() { }
-
-  saveLogin() {
-    console.log("Saving");
+  constructor() {
   }
 
+  saveLogin(username: string, password: string) {
+    this.cred = { credId: 1, username: username, password: password};
+    this.credList.push(this.cred);
+  }
   getUsers(): User[] {
-    console.log("Retrieves");
     return this.userList;
+  }
+  getCreds(): Cred[] {
+    return this.credList;
   }
 }

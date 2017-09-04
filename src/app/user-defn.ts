@@ -12,10 +12,16 @@ export class LoginForm {
   }
 }
 
+export class Cred {
+  credId: number;
+  username: string;
+  password: string;
+}
+
 export class User {
   userId: number;
-  username: string;
   firstName: string;
   lastName: string;
+  credential?: Cred;
   createdDate?: string;
 }

@@ -9,6 +9,8 @@ import { AbsLoginComponent } from './abs-login/abs-login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingComponent } from './landing/landing.component';
+import { AddProfileComponent } from './add-profile/add-profile.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LandingComponent } from './landing/landing.component';
     AbsLoginComponent,
     SignupComponent,
     PageNotFoundComponent,
-    LandingComponent
+    LandingComponent,
+    AddProfileComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,
